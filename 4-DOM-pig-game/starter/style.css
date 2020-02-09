@@ -144,11 +144,55 @@ i {
 .dice {
     position: absolute;
     left: 50%;
-    top: 178px;
+    /* top: 178px; */
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
+#dice-1 {
+    top: 130px
+}
+
+#dice-2 {
+    top: 260px;
+}
+
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.winning-score-label {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+#winning-score-input {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 15px;
+    height: 40px;
+    width: 125px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 600;
+    transform: translateX(-50%);
+    border: 1px solid #EB4D4D;
+    border-radius: 5px;
+}
+
+#winning-score-input:focus {
+    background-color: #f6f6f6;
+    outline: none;
+}
+
+#winning-score-input:disabled {
+    background-color: #ffffff;
+    color: rgb(150, 150, 150);
+}
